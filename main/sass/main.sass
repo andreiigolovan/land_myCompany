@@ -1,0 +1,220 @@
+*
+  padding: 0
+  margin: 0
+  // box-sizing: border-box
+
+a
+  text-decoration: none
+
+li 
+  list-style: none 
+
+body
+  font-family: 'Open Sans', sans-serif
+
+header
+  width: 100%
+  background: #000
+  padding-bottom: 20px; //not_tested
+  display: flex
+
+.header__logo
+  margin-top: 56px
+  margin-left: 12% 
+  p
+    color: #fff
+    font-size: 24px
+    font-weight: 800
+    text-transform: uppercase
+
+nav
+  margin-top: 56px
+  margin-left: 29%
+
+// .topnav
+  // display: flex
+
+.topnav a
+  color: #fff
+  text-align: center
+  padding: 12px 16px
+  font-size: 14px
+  font-weight: bold
+
+  &:hover
+    border-bottom: 3px solid #fcac45
+
+.topnav .icon
+  display: none
+
+
+// main section
+main
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.main__welcome
+  background: #000
+  text-align: center
+  padding: 200px 0 380px 0 
+
+  h1 
+    font-family: 'Open Sans Light', sans-serif
+    font-size: 44px
+    color: #999
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: -2.2px
+    margin: 0 auto;
+
+  .mycompany 
+    font-family: 'Open Sans SemiBold', sans-serif
+    font-size: 44px
+    color: #fcac45
+    font-weight: 800
+    letter-spacing: -2.2px
+
+  p
+    color: #999
+    font-size: 20px
+    letter-spacing: -1px
+  
+  .bold
+    font-weight: 800
+    letter-spacing: -1px
+   
+.wrapper
+  width: 75%
+  margin: 0 auto
+
+.main__about
+  display: flex
+  // justify-content: space-between
+  // flex-wrap: wrap
+  padding: 100px 0px
+
+.about_right
+  margin-left: 175px
+  // width: 50%
+
+  h2
+    display: inline-block
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    font-size: 34px;
+    text-transform: uppercase
+    border-bottom: 3px solid #fcac45
+    padding-bottom: 20px
+
+  .bold
+    font-family: 'Open Sans', sans-serif
+    font-weight: 800
+
+  p
+    width: 400px
+    font-size: 18px
+    color: #6c6c6c
+    letter-spacing: -0.72px
+    margin: 30px 0 40px 0
+
+.list__item
+  font-size: 16px;
+  padding-left: 27px
+  margin-bottom: 10px
+
+  &:before
+    content: url('../img/list_style_dot.png')
+    display: inline-block
+    width: 27px;
+    margin-left: -27px; 
+  
+  b
+    font-size: 18px;
+    font-weight: 800 
+
+
+.mw-100
+  min-width: 100%
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px)
+  nav
+   margin-left: 20%
+
+@media screen and (max-width: 1110px)
+  nav
+   margin-left: 8%
+
+@media screen and (max-width: 960px)
+  .topnav a 
+    display: none
+
+  .topnav a.icon
+    display: block
+    float: right
+    margin-top: -17px
+    color: #fff
+    font-size: 25px
+
+  nav
+    width: 100%
+  
+  .topnav.responsive
+    position: relative
+    top: 50px
+    left: -200px
+
+  header .topnav.responsive
+    height: 340px
+
+  .topnav.responsive a.icon
+    position: absolute
+    top: -50px
+    right: -200px
+
+  .topnav.responsive a
+    float: none
+    display: block
+    text-align: left
+
+  
+
+
+
+  .main__welcome
+    padding: 50px 0px
+    
+    h1
+      font-size: 36px
+
+    .mycompany
+      font-size: 36px
+    
+    p
+      font-size: 16px
+
+  .mw-100
+    max-width: 100%
+
+  .main__about
+    flex-direction: column
+  
+  .about_right
+    margin-left: 0  
+    text-align: center
+ 
+  .about_right h2
+    font-size: 24px
+    margin-top: 10px
+    
+  .about_right p
+    width: 100%
+
+  .about_right li
+    text-align: left
