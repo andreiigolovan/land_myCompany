@@ -1,4 +1,4 @@
-menu.onclick = function () {
+menu.onclick = function() {
   let elem = document.getElementById('myTopnav');
 
   if (elem.className === 'topnav') {
@@ -6,4 +6,4 @@ menu.onclick = function () {
   } else {
     elem.className = 'topnav';
   }
-}
+};

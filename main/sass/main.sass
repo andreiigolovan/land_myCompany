@@ -1,7 +1,9 @@
+$orange: #fcac45
+
 *
   padding: 0
   margin: 0
-  // box-sizing: border-box
+  box-sizing: border-box
 
 a
   text-decoration: none
@@ -42,7 +44,7 @@ nav
   font-weight: bold
 
   &:hover
-    border-bottom: 3px solid #fcac45
+    border-bottom: 3px solid $orange
 
 .topnav .icon
   display: none
@@ -71,7 +73,7 @@ main
   .mycompany 
     font-family: 'Open Sans SemiBold', sans-serif
     font-size: 44px
-    color: #fcac45
+    color: $orange
     font-weight: 800
     letter-spacing: -2.2px
 
@@ -84,18 +86,20 @@ main
     font-weight: 800
     letter-spacing: -1px
    
+.main__about
+  padding: 100px 0px
+
 .wrapper
   width: 75%
   margin: 0 auto
 
-.main__about
+.container
   display: flex
-  // justify-content: space-between
-  // flex-wrap: wrap
-  padding: 100px 0px
+  justify-content: space-around
+  flex-wrap: wrap
 
 .about_right
-  margin-left: 175px
+  margin-left: 20px
   // width: 50%
 
   h2
@@ -104,7 +108,7 @@ main
     font-weight: 400
     font-size: 34px;
     text-transform: uppercase
-    border-bottom: 3px solid #fcac45
+    // border-bottom: 3px solid $orange
     padding-bottom: 20px
 
   .bold
@@ -138,9 +142,237 @@ main
   min-width: 100%
 
 
+.main__team
+  background: #000
+  padding: 100px 0 120px 0
+  color: #fff
+  text-align: center
+
+.team__header
+  font-family: "Open Sans Semibold", sans-serif
+  font-size: 44px
+  text-transform: uppercase
+  // padding-bottom: 30px
+  margin-bottom: 30px
+
+h2:after
+  content: ''
+  display: block
+  margin: 0 auto
+  width: 100px
+  margin-top: 30px
+  border-bottom: 3px solid $orange
+
+
+.team__cards
+  margin-top: 85px
+  display: flex
+
+.card
+  margin: 0 40px
+
+.card__photo
+  background: #d7d7d7
+  width: 130px
+  height: 130px
+  border-radius: 50%
+  margin: 20px auto
+
+.card__name
+  font-family: "Open Sans Semibold", sans-serif
+  font-size: 20px
+  margin-bottom: 10px
+
+.card__position
+  font-size: 16px
+  margin-bottom: 35px
+
+.card__description
+  font-size: 14px
 
 
 
+.main__services
+  text-align: center
+  padding: 100px 0 100px 0
+
+.services__header
+  font-size: 44px
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.services__desc
+  font-size: 16px
+  font-style: italic
+  margin-top: 50px
+  margin-bottom: 100px
+
+.servises__cards
+  display: grid
+  grid-template-columns: auto auto auto auto
+  grid-column-gap: 20px
+
+.card__header
+  text-transform: uppercase
+  font-size: 25px
+  margin-top: 20px
+  margin-bottom: 15px
+  
+
+.main__clients
+  color: #fff
+  background: #000
+  text-align: center
+  padding: 100px 0 200px 0
+
+.clients__header
+  font-family: 'Open Sans Light', sans-serif
+  font-size: 44px
+  text-transform: uppercase
+  margin-bottom: 30px
+  font-weight: 100
+
+
+.clients__header-bold
+  font-weight: 800
+
+.clients
+  margin-top: 100px
+
+.clients__icon
+  margin-left: 30px
+  margin-top: 10px
+
+
+
+
+.main__works
+  text-align: center
+  padding: 100px 0 100px 0
+
+.works__header
+  font-family: 'Open Sans Light', sans-serif
+  text-transform: uppercase
+  font-size: 44px
+  font-weight: 100
+  margin-bottom: 30px
+
+.works__header-bold
+  font-weight: 800
+
+.works__desc
+  margin-top: 50px
+  margin-bottom: 100px
+  font-style: italic
+  color: #6c6c6c
+  font-size: 16px
+
+.gallery__image:hover
+  opacity: 0.9
+
+
+
+.main__testimonials
+  color: #fff
+  background: #000
+  text-align: center
+  padding: 100px 0 150px 0
+
+.testimonials__header
+  font-size: 44px
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.testimonials__message
+  color: #c7c7c7
+  font-size: 18px
+  font-weight: 800
+  text-transform: uppercase
+  // width: 930px
+  margin: 110px 0 50px 0
+
+.testimonials__author
+  color: #b2b2b2
+  font-size: 18px
+
+.testimonials__author-bold
+  font-weight: 800
+
+
+.contact__form
+  padding: 100px 0 100px 0
+
+.contact__wrapper
+  width: 760px
+  margin: 0 auto
+  text-align: center
+
+.contact__header
+  font-size: 44px
+  color: #222222
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.contact__desc
+  color: #6c6c6c
+  font-size: 16px
+  font-style: italic
+  margin-top: 50px
+
+form 
+  text-align: left
+
+.form__inputs
+  margin-top: 100px
+  display: flex
+
+.name__container
+  margin-right: 40px
+  
+label
+  color: #636363
+
+.red
+  color: red
+
+input
+  width: 360px
+  height: 40px
+  margin-bottom: 30px
+
+textarea
+  width: 100%
+  height: 160px
+
+input, textarea 
+  font-size: 20px
+  border: 1px solid #999
+  margin-top: 5px
+
+.button__block
+  display: flex
+  justify-content: flex-end
+
+input[type=submit]
+  font-size: 16px
+  color: #fff
+  width: 170px
+  height: 40px
+  background: $orange
+  margin-top: 20px
+
+
+footer
+  padding: 30px 0 30px 0
+  background: #222222
+  display: flex
+  justify-content: center
+
+.social__icon:not(:last-child)
+  margin-right: 10px
+
+.social__icon:hover
+  opacity: 0.6
 
 
 @media screen and (max-width: 1300px)
@@ -215,6 +447,19 @@ main
     
   .about_right p
     width: 100%
+    // text-align: left
 
   .about_right li
     text-align: left
+
+
+
+  .team__cards
+    flex-direction: column
+
+
+  .servises__cards
+    grid-template-columns: auto
+
+  .gallery__image:not(:first-child)
+    display: none
