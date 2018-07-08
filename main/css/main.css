@@ -364,10 +364,7 @@ form {
 .form__inputs {
   margin-top: 100px;
   display: flex;
-}
-
-.name__container {
-  margin-right: 40px;
+  justify-content: space-between;
 }
 
 label {
@@ -511,5 +508,15 @@ footer {
   }
   .gallery__image:not(:first-child) {
     display: none;
+  }
+  .contact__wrapper {
+    width: 90%;
+  }
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type=text] {
+    width: 100%;
   }
 }
