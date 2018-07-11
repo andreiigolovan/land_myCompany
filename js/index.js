@@ -6,4 +6,4 @@ menu.onclick = function() {
   } else {
     elem.className = 'topnav';
   }
-};
+}
