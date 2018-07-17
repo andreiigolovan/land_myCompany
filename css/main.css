@@ -489,6 +489,7 @@ footer {
   }
   .main__about {
     flex-direction: column;
+    padding: 50px 0;
   }
   .about_right {
     margin-left: 0;
@@ -504,11 +505,63 @@ footer {
   .about_right li {
     text-align: left;
   }
+  .main__team {
+    padding: 50px 0;
+  }
+  .team__header {
+    font-size: 24px;
+  }
+  .team__cards {
+    margin-top: 40px;
+  }
+  .main__services {
+    padding: 50px 0;
+  }
+  .services__header {
+    font-size: 24px;
+  }
   .servises__cards {
     grid-template-columns: auto;
   }
+  .card__header {
+    font-size: 16px;
+  }
+  .main__clients {
+    padding: 50px 0;
+  }
+  .clients__header {
+    font-size: 24px;
+  }
+  .main__works {
+    padding: 50px 0;
+  }
+  .works__header {
+    font-size: 24px;
+  }
+  .works__desc {
+    margin-bottom: 50px;
+  }
+  .main__testimonials {
+    padding: 50px 0;
+  }
+  .testimonials__header {
+    font-size: 24px;
+  }
+  .testimonials__message {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .testimonials__author {
+    font-size: 14px;
+  }
   .gallery__image:not(:first-child) {
     display: none;
+  }
+  .contact__form {
+    padding: 50px 0 20px 0;
+  }
+  .contact__header {
+    font-size: 24px;
   }
   .contact__wrapper {
     width: 90%;
@@ -516,6 +569,7 @@ footer {
   .form__inputs {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
   input[type=text] {
     width: 100%;
