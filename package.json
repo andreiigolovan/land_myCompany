@@ -13,7 +13,7 @@
   "author": "andreii.golovan@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   }
